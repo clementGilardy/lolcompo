@@ -4,7 +4,7 @@
 
 var phonecatControllers = angular.module('phonecatControllers', []);
 
-phonecatControllers.controller('ChampListController', ['$scope', 'Champ',
-  function($scope, Champ) {
-    $scope.champs = Champ.query();
+phonecatControllers.controller('ChampListController', ['$scope', 'Champions',
+  function($scope, Champions) {
+    $scope.champs = Champions.query();
   }]);
