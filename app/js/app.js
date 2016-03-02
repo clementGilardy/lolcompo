@@ -4,7 +4,8 @@
 
 var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
-  'phonecatControllers'
+  'phonecatControllers',
+  'champServices'
 ]);
 
 phonecatApp.config(['$routeProvider',
@@ -12,7 +13,7 @@ phonecatApp.config(['$routeProvider',
     $routeProvider.
       when('/', {
         templateUrl: 'views/index.html',
-        controller: 'PhoneListCtrl'
+        controller: 'ChampListController'
       }).
       otherwise({
         redirectTo: '/'
