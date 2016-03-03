@@ -15,6 +15,9 @@ phonecatApp.config(['$routeProvider',
         templateUrl: 'views/index.html',
         controller: 'ChampListController'
       }).
+      when('/stats',{
+        templateUrl: 'views/stats.html'
+      }).
       otherwise({
         redirectTo: '/'
       });
